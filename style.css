@@ -7,13 +7,27 @@
 
 body {
     font-family: "Poppins";
-    background-color: #f1f1f1;
+    background-color: #f2f2f2;
+}
+
+header {
+    width: 100%;
 }
 
 header nav ul a {
     text-decoration: none;
     color: white;
     padding: 5px;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: #666;
+    transition: .3s;
+}
+
+header > nav > ul > li > a {
+    padding: 10px;
+    border-radius: 5px;
 }
 
 header > nav > h1 {
@@ -49,12 +63,11 @@ header > nav {
 #register:hover {
     background-color: coral;
     color: #f1f1f1;
-    transition: .5s;
+    transition: .3s;
 }
 
 #login:hover {
     background-color: #a0a0a0;
     color: #ffffff;
-    transition: .5s;
+    transition: .3s;
 }
-
