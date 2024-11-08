@@ -54,7 +54,7 @@ header > nav {
     background-color: #f1f1f1;
     border-radius: 5px;
     color: #444;
-    margin: 5px;
+    margin-left: 10px;
     padding: 10px;
     font-family: "Poppins";
     font-weight: 500;
@@ -70,4 +70,92 @@ header > nav {
     background-color: #a0a0a0;
     color: #ffffff;
     transition: .3s;
+}
+
+@media (max-width: 768px) {
+    header > nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header > nav > ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header > nav ul a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    #register, #login {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header > nav h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    header > nav {
+        padding: 10px;
+    }
+
+    header > nav > ul {
+        align-items: center;
+    }
+
+    header > nav ul a {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+/*
+#menu-button {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media (max-width: 769px) {
+    #menu-button {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #444;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #nav-links li {
+        margin: 5px 0;
+    }
+
+    #nav-links a {
+        display: block;
+        color: #f1f1f1;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    #nav-links a:hover {
+        background-color: #666;
+    }
+
 }
